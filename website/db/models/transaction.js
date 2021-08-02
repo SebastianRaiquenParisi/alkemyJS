@@ -33,7 +33,7 @@ module.exports = (sequelize, DataTypes) => {
     type_id: DataTypes.INTEGER
   }, {
     sequelize,
-    modelName: 'Transaction',
+    modelName: 'Transaction'
   });
   return Transaction;
 };
