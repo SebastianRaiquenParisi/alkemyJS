@@ -11,6 +11,6 @@ app.listen (3000, () =>
 console.log ("Servidor corriendo en puerto 3000")
 );
 
-const mainRouter = require("./routes/mainRouter");
+const apiRouter = require("./routes/api");
 
-app.use("/", mainRouter);
+app.use("/api", apiRouter);
