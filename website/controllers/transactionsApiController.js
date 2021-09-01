@@ -1,4 +1,4 @@
-const db = require("../db/models");
+const db = require("../db/old.models");
 const Categories = db.Category;
 const Transactions = db.Transaction;
 const TransactionTypes = db.Transactiontype;

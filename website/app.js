@@ -1,5 +1,9 @@
 const methodOverride =  require('method-override');
 const express = require("express");
+//db connection
+const connection = require("./db/connection");
+
+const PORT  = 3000;
 
 const app = express();
 app.use(methodOverride('_method'));
@@ -7,7 +11,7 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
-app.listen (3000, () =>
+app.listen (PORT, () =>
 console.log ("Servidor corriendo en puerto 3000")
 );
 
