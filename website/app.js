@@ -3,7 +3,7 @@ const express = require("express");
 //db connection
 const connection = require("./db/connection");
 
-const PORT  = 3000;
+const PORT  = 3006;
 
 const app = express();
 app.use(methodOverride('_method'));
